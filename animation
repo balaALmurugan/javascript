@@ -1,0 +1,13 @@
+<html>
+<head>
+<script>
+alert("hello guys"); 
+</script>
+</head>
+<body>
+<button onclick="document.getElementbyId('image').src='C:\Users\Bala AJ\Downloads\pic_bulboff.gif'">Turn on</button>
+<img id="image" src="C:\Users\Bala AJ\Downloads\pic_bulbon.gif" style="width100px">
+<button onclick="document.getElementbyId('image1').src='C:\Users\Bala AJ\Downloads\pic_bulboff.gif'">Turn off</button>
+<img id="image1" src="C:\Users\Bala AJ\Downloads\pic_bulboff.gif" style="width100px">
+</body>
+</html>
