@@ -5,206 +5,6 @@
   height: calc(100vh - 56px);
   align-items:stretch;
  }
-
-//   .sidebar {
-//     width: 70px;
-//     background: #212226;
-//     display: flex;
-//     align-items: flex-start;
-//     padding: 24px 0 0 24px;
-
-//     .brand-label {
-//       color: #38d39f;
-//       font-weight: bold;
-//       font-size: 1.1em;
-//       letter-spacing: 1px;
-//     }
-//   }
-//   .search-container{
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin: 40px auto 0 auto;
-//     max-width: 500px;
-//     background: #fff;
-//     border-radius: 24px;
-//     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-//     padding: 4px 12px;
-//     padding-bottom: 40px;
-//     position: relative;
-//     min-height: 40px;
-//   }
-//     // .attach_button{
-//     //     position: absolute;
-//     //     right: 60px;
-//     //     z-index: 2;
-//     //     background: #fff;
-//     //     display: flex;
-//     //     align-items: center;
-//     //     justify-content: center;
-//     //     margin-left: 80px;
-//     // }
-//   .search-input{
-//     flex: 1;
-//     height: 48px;
-//     font-size: 1.1rem;
-//     border: none;
-//     outline: none;
-//     border-radius: 24px;
-//     background: transparent;
-//     padding: 0 44px 0 36px;
-//   }
-
-
-
-//   .main-content {
-//     flex: 1;
-//     padding: 200px 200px 0 200px;
-
-//     .welcome-text {
-//       margin-bottom: 28px;
-//       h2 {
-//         font-weight: 600;
-//         margin: 0 0 4px 0;
-//       }
-//       .subtitle {
-//         font-size: 1.1em;
-//         color: #8ca1a8;
-//         margin-bottom: 16px;
-//       }
-//     }
-//     .prompt-input-wrapper{
-//         display: flex;
-//         align-items: flex-end;
-//         gap: 8px;
-//     }
-
-//     .chat-input-section {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       gap: 10px;
-//       background: #191a1e;
-//       padding: 10px;
-//       border-radius: 12px;
-//       border-top: 1px solid #ddd;
-//       padding: 10px;
-//       overflow: visible;
-//       .model-dropdown {
-//         width: 100%;
-//       }
-//       .full-width{
-//         width: 100%;
-//       }
-
-
-//     //   button[mat-icon-button] {
-//     //     margin-bottom: 50px;
-//     //   }
-//     }
-//     .mat-select{
-
-//     }
-//     .query-input {
-//         width: 100%;
-//         position: relative;
-//       }
-//     .search-send-btn{
-//         height: 44px;
-//         width: 44px;
-//         min-width: 44px;
-//         border-radius: 50%;
-//         margin-left: 8px;
-//         box-shadow: 0 2px 8px rgba(0,0,0,0.09);
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//     }
-//     .circle_button{
-//         height: 44px;
-//         width: 44px;
-//         min-width: 44px;
-//         border-radius: 50%;
-//         margin-left: 8px;
-//         box-shadow: 0 2px 8px rgba(0,0,0,0.09);
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//     }
-//     // .attach_button .mat-icon-button{
-//     //     background:none !important;
-//     // }
-//       .attach_button:hover mat-icon,.send-btn:hover{
-//         background: #e0e0e0;
-//         color: #f7ebeb;
-//       }
-//     mat-form-field.query-input{
-//         flex: 1;
-//         background: #ddd;
-//     }
-//     .query-input textarea{
-//         resize: none;
-//         min-height: 50px;
-//         padding: 8px;
-//         font-size: 14px;
-//         padding-bottom: 40px;
-//     }
-//     mat-form-field.query-input{
-//         flex: 1;
-//         margin: 0 8x;
-//     }
-//     // ::ng-deep .custom-attach-menu .mat-menu-panel{
-//     //     background: #e2e5e7 !important;
-//     //     color: #fff  !important; 
-
-//     // }
-//     ::ng-deep .mat-option{
-//         background-color: #dac9c9 !important;
-//         color:#dac9c9 !important;
-//     }
-
-//     .info-text {
-//       position: relative;
-//       left: 0;
-//       bottom: 0;
-//       width: 100%;
-//       padding: 10px;
-//       text-align: center;
-//       color: #555;
-//       margin-top: 38px;
-//       font-size: 0.93em;
-//       color: #bdc3c7;
-
-//       .public-mode {
-//         margin-top: 7px;
-//         .green-dot {
-//           display: inline-block;
-//           width: 10px;
-//           height: 10px;
-//           border-radius: 50%;
-//           background: #23c383;
-//           margin-right: 7px;
-//         }
-//         b { color: #79e4aa; }
-//       }
-//       a { color: #43eba5; text-decoration: underline; }
-//     }
-//   }
-// }
-// .model-option-preview{
-//     margin: 25px auto 0 auto;
-//     background: #f7f7f7;
-// }
-
-// /* Optional: style Angular Material fields for dark theme */
-// ::ng-deep .mat-form-field-infix,
-// ::ng-deep .mat-select-value,
-// ::ng-deep textarea.mat-input-element {
-//   color: #f2f3f4 !important;
-// }
-// ChatGPT-like SCSS for existing HTML structure
-// This file only changes styling — no HTML or content modified.
-
 $bg-dark: #0b1020;
 $panel: #0f1724;
 $muted: #97a0b3;
@@ -214,7 +14,6 @@ $glass-2: rgba(255,255,255,0.02);
 $radius-lg: 12px;
 $radius-sm: 8px;
 
-// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
 * { box-sizing: border-box; }
 html,body { height:100%; }
@@ -227,13 +26,6 @@ body {
   -moz-osx-font-smoothing:grayscale;
 }
 
-// .chat-dashboard{
-//   display:flex;
-//   gap:24px;
-//   padding:28px;
-//   height: calc(100vh - 56px);
-//   align-items:stretch;
-// }
 
 /* Sidebar */
 .sidebar{
@@ -336,9 +128,8 @@ body {
   box-shadow: 0 10px 30px rgba(16,163,127,0.12);
 }
 
-/* Chat input section (below) */
 .chat-input-section{
-  margin-top:auto; /* stick to bottom */
+  margin-top:auto; 
   display:flex;
   flex-direction:column;
   gap:12px;
@@ -350,7 +141,7 @@ body {
   padding:6px;
 }
 
-/* info area similar to footer */
+/*footer */
 .info-text{
   display:flex;
   justify-content:flex-start;
@@ -386,8 +177,6 @@ button:focus, .attach_button:focus, .search-send-btn:focus {
   outline: 3px solid rgba(16,163,127,0.18);
   outline-offset:2px;
 }
-
-/* Optional -- style Material icons if present */
 mat-icon{
   font-size:20px;
   color:inherit;
