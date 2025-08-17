@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class ChatDashboardComponent {
   prompt = '';
+  responseText: string='';
   @ViewChild('fileInput') fileInput!:ElementRef<HTMLInputElement>;
   selectedModel = 'Chat';
   models = [
@@ -43,13 +44,14 @@ export class ChatDashboardComponent {
     formData.append('file', this.attachedFile);
   }
 
-  this.http.post('/api/sendPrompt', formData).subscribe({
+  this.http.post('/api/sendPrompt', formData,{responseType:'text'}).subscribe({
     next: (res: any) => {
       console.log('✅ Sent successfully:', res);
       // Reset fields after sending
       this.prompt = '';
       this.attachedFile = null;
       this.isFileAttached = false;
+      this.responseText=res;
     },
     error: (err: HttpErrorResponse) => console.error('❌ Error sending:', err)
   });

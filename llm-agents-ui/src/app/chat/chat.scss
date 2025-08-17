@@ -410,6 +410,20 @@ mat-icon{
   cursor: pointer;
   color: #555;
 }
+.response-section {
+  margin-top: 16px;
+
+  .response-box {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    resize: vertical;
+  }
+}
+
 
 
 

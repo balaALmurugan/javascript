@@ -51,6 +51,13 @@
         </mat-form-field>
       </div>
     </div>
+    <div class="response-section" *ngIf="responseText">
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Response</mat-label>
+    <textarea matInput readonly rows="6">{{ responseText }}</textarea>
+  </mat-form-field>
+</div>
+
     <div class="info-text">
       <p class="public-mode">
         <span class="green-dot"></span>
