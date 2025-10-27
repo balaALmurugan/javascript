@@ -1,0 +1,8 @@
+<h2>Agents</h2>
+<ul>
+  @for (a of agents(); track a.id) {
+    <li>
+      <a [routerLink]="['/agents', a.id]">{{ a.name }} <small>({{ a.model }})</small></a>
+    </li>
+  }
+</ul>

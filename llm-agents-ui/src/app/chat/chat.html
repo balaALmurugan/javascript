@@ -1,0 +1,66 @@
+<div class="chat-dashboard">
+  <div class="sidebar">
+    <span class="brand-label">ITPS-Agent</span>
+  </div>
+  <div class="main-content">
+    <div class="welcome-text">
+      <h2>Hello, Welcome!!</h2>
+    </div>
+
+    <div class="search-container">
+      <input matInput placeholder="Ask Me....!" [(ngModel)]="prompt" (keyup.enter)="sendPrompt()"
+        class="search-input" />
+      <button mat-icon-button class="attach_button circle_button" [matMenuTriggerFor]="attachMenu" type="button"
+        aria-label="Attach File">
+        <mat-icon>attach_file</mat-icon>
+      </button>
+      <button mat-raised-button color="primary" class="search-send-btn" (click)="sendPrompt()" aria-label="Send">
+        <mat-icon>send</mat-icon>
+      </button>
+      <div class="attach-tab">
+        <mat-menu #attachMenu="matMenu" class="custom-attach-menu">
+          <button mat-menu-item (click)="triggerLocalFilePicker()">
+            <mat-icon>computer</mat-icon>
+            <span>Upload from this device</span>
+          </button>
+          <button mat-menu-item (click)="uploadFromOneDrive()">
+            <mat-icon>cloud</mat-icon>
+            <span>Upload from Onedrive</span>
+          </button>
+        </mat-menu>
+      </div>
+      <div class="attached-file" *ngIf="attachedFile">
+        {{ attachedFile.name }}
+        <span class="remove-btn" (click)="removeAttachment()">✖</span>
+      </div>
+
+      <input type="file" #fileInput hidden (change)="onFileSelected($event)">
+    </div>
+
+
+    <div class="chat-input-section">
+      <div class="model-dropdown" *ngIf="isFileAttached">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Select Model</mat-label>
+          <mat-select [(ngModel)]="selectedModel">
+            <mat-option *ngFor="let model of models" [value]="model.value">
+              <b>{{ model.name }}</b>
+              <span class="desc">- {{ model.desc }}</span>
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="response-section" *ngIf="responseText">
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Response</mat-label>
+    <textarea matInput readonly rows="6">{{ responseText }}</textarea>
+  </mat-form-field>
+</div>
+
+    <div class="info-text">
+      <p class="public-mode">
+        <span class="green-dot"></span>
+        AllRights Reserved <b>BNPPARIBAS @ 2025</b>
+      </p>
+    </div>
